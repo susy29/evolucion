@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{--navy:#082a47;--navy2:#0c3556;--blue:#1389b8;--cyan:#3bc5d3;--orange:#ffad1f;--paper:#f5f8fa}
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--paper);color:#17324a;font-family:Segoe UI,Roboto,Arial,sans-serif}
+@layer components{
+  .page{overflow:hidden;background:#f7f9fb}
+  .shell{@apply mx-auto w-full max-w-[1220px] px-5 md:px-8}
+  .eyebrow{@apply text-[11px] font-extrabold uppercase tracking-[.18em] text-[#168db7]}
+  .title{@apply mt-2 text-3xl font-black tracking-tight text-[#17324a] md:text-5xl}
+  .copy{@apply mt-4 max-w-2xl text-[15px] leading-7 text-slate-600 md:text-base}
+  .btn-primary{@apply inline-flex items-center justify-center gap-2 rounded-full bg-[#ffad1f] px-6 py-3 text-xs font-extrabold uppercase tracking-wide text-[#17324a] shadow-[0_12px_28px_rgba(255,173,31,.22)] transition hover:-translate-y-0.5 hover:bg-[#ffc04b]}
+  .btn-secondary{@apply inline-flex items-center justify-center gap-2 rounded-full border border-[#a6bdca] bg-white px-6 py-3 text-xs font-extrabold text-[#17324a] transition hover:-translate-y-0.5 hover:border-[#168db7]}
+  .section{@apply py-16 md:py-20}
+  .soft-card{@apply rounded-[22px] border border-slate-200/80 bg-white p-6 shadow-[0_14px_40px_rgba(13,48,72,.08)]}
+  .dark-band{background:linear-gradient(105deg,#082a47,#0d3b5f 55%,#082a47)}
+}
