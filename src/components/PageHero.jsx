@@ -8,7 +8,7 @@ export default function PageHero({ eyebrow, title, text, image, cta = 'Conocer m
       <div className="section-container relative grid items-center gap-10 lg:grid-cols-[1.05fr_.95fr]">
         <div className="relative z-10">
           <p className={`eyebrow ${dark ? 'text-cyan-300' : ''}`}>{eyebrow}</p>
-          <h1 className={`max-w-3xl text-4xl font-extrabold leading-tight tracking-tight md:text-6xl ${dark ? 'text-white' : 'text-primary-900'}`}>{title}</h1>
+          <h1 className={`max-w-3xl text-[#32A5C7]xl font-extrabold leading-tight tracking-tight md:text-6xl ${dark ? 'text-white' : 'text-primary-900'}`}>{title}</h1>
           <p className={`mt-6 max-w-2xl text-lg leading-8 ${dark ? 'text-slate-200' : 'text-slate-600'}`}>{text}</p>
           <Link to={ctaLink} className="btn-primary mt-8">{cta} <ArrowRight size={17}/></Link>
         </div>
